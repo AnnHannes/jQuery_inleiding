@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery voorbeeld 4 - events</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <h1>Voorbeeld 4</h1>
+    <div id="target">
+        Klik hier!
+    </div>
+    <div id="target2">
+        Dubbelklik hier!
+    </div>
+    <script src="scripts/jquery-3.4.1.js"></script>
+    <script>
+        //korte notatie
+        $(function() {
+            $('#target').click(function() {
+                alert('Klik!');
+            });
+
+            $('#target2').dblclick(function() {
+                alert('Dubbele klik!');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

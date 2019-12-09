@@ -1,0 +1,26 @@
+#container {
+    display: flex;
+}
+
+#container div {
+    padding: 100px;
+    margin: 20px;
+    border: 1px solid black;  
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.green {
+    background-color: green;
+    color: black;
+}
+
+.orange {
+    background-color: orange;
+    color: black;
+}
+
+.red {
+    background-color: red;
+    color: black;
+}

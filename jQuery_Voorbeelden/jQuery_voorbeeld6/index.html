@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery voorbeeld 6 - Debugging met console.log()</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <h1>Voorbeeld 6</h1>
+    <div id="container">
+        <div id="groen">Groen</div>
+        <div id="oranje">Oranje</div>
+        <div id="rood">Rood</div>
+    </div>
+    <script src="scripts/jquery-3.4.1.js"></script>
+    <script>
+        //korte notatie
+        $(function() {
+            $('#groen').click(function() {
+                console.log('Er werd gekozen voor groen');
+                $('#groen').addClass('green');
+                $('#rood').removeClass('red');
+            });
+
+            $('#oranje').click(function() {
+                console.log('Er werd gekozen voor oranje');
+                $('#oranje').addClass('orange');
+                $('#rood').removeClass('red');
+            });
+
+            $('#rood').dblclick(function() {
+                console.log('Er werd gekozen voor rood');
+                $('#rood').addClass('red');
+                $('#groen').removeClass('green');
+                $('#oranje').removeClass('orange');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
